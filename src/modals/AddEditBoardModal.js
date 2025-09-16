@@ -11,7 +11,7 @@ export default function AddEditBoardModal({ type, setIsBoardModalOpen }) {
   const [name, setName] = useState("");
   const [newColumns, setNewColumns] = useState([
     { name: "Todo", tasks: [], id: uuidv4() },
-    { name: "Doing", tasks: [], id: uuidv4() },
+    { name: "In Progress", tasks: [], id: uuidv4() },
   ]);
   const [isValid, setIsValid] = useState(true);
   const board = useSelector((state) => state.boards).find(
